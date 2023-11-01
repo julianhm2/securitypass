@@ -1,0 +1,350 @@
+<!--Aqui inicia el inicio de la pagina-->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>SecurityPassword</title>
+    <link rel="stylesheet" href="estilos.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script src="hola.js"></script>
+  </head>
+
+  <style>
+    .carousel {
+      width: 100%;
+    }
+
+    .carousel-inner {
+      width: 100%;
+    }
+
+    .carousel-item {
+      width: 100%;
+    }
+
+    .carousel-item img {
+      width: 100%;
+      height: auto; /* Esto mantendrá la proporción de aspecto */
+    }
+
+    .header {
+      z-index: 1000;
+    }
+
+    .container-fluid {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.3); /* Color oscuro con opacidad */
+    }
+
+    .row {
+      margin-left: 65px;
+    }
+
+  </style>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <nav class="navbar navbar-expand-lg bg-morado">
+          <div class="container-fluid">
+            <a class="navbar-brand text-white" href="#">SecurityPassword</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse d-flex justify-content-end"
+              id="navbarNavAltMarkup"
+            >
+              <div class="navbar-nav">
+                <a
+                  class="nav-link active text-white"
+                  aria-current="page"
+                  href="#"
+                  ><i class="fa-solid fa-house" style="color: #ffffff"></i>
+                  inicio</a
+                >
+                <a class="nav-link text-white" href="#"
+                  ><i class="fa-solid fa-user"></i> Ingresar</a
+                >
+                <a class="nav-link text-white" href="#"
+                  ><i class="fa-solid fa-pencil"></i> Registrarse</a
+                >
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+    </div>
+
+    <div class="container-fluid">
+      <div id="carouselExampleCaptions" class="carousel slide w-100">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="overlay"></div>
+            <img
+              src="https://www.myhrtoolkit.com/hubfs/password-security-best-practices.jpg"
+              class="d-block w-100"
+              alt="..."
+              style="height: 500px"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5><strong>SecurityPassword</strong></h5>
+              <p>
+                Nuestra página web ofrece generación de contraseñas seguras y
+                análisis de seguridad en línea. Podrás crear contraseñas
+                robustas y únicas, así como verificar enlaces en busca de virus
+                y detectar páginas web falsas. Protege tus datos y navega con
+                confianza en un entorno digital cada vez más seguro.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="overlay"></div>
+            <img
+              src="https://thehackernews.com/images/-07O649m7bZU/YPGy1slYgMI/AAAAAAAABJA/x30NYvoBqsYsUlsLBijjFINBngxN2TJYQCLcBGAsYHQ/s0/Password-Security.jpg"
+              class="d-block w-100"
+              alt="..."
+              style="height: 500px"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>
+                Some representative placeholder content for the second slide.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="overlay"></div>
+            <img
+              src="https://www.reveantivirus.com/blog/wp-content/uploads/2019/03/Antivirus_On_page_3-min.jpg"
+              class="d-block w-100"
+              alt="..."
+              style="height: 500px"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>
+                Some representative placeholder content for the third slide.
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="container">
+      <h1 class="eltitu"><strong>Menú</strong></h1>
+      <br /><br />
+      <p class="introduccion">
+        Aqui puedes encontrar las diferentes opciones de seguridad que
+        brindamos.
+      </p>
+
+<br><br>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card" style="width: 18rem">
+              <img src="https://img.unocero.com/2019/12/peores-contrasenas-2019-1-1-880x495.jpg" class="card-img-top" alt="..." />
+              <div class="card-body text-center">
+                <h5 class="card-title">Generador de contraseñas</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card" style="width: 18rem">
+              <img src="https://easydmarc.com/blog/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2022/03/How-to-Check-a-Link-for-Phishing-1.jpg.webp" class="card-img-top" alt="..." />
+              <div class="card-body text-center">
+                <h5 class="card-title">Verificador de enlaces maliciosos</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card" style="width: 18rem">
+              <img src="https://img.unocero.com/2019/01/phishing-880x495.jpg" class="card-img-top" alt="..." />
+              <div class="card-body text-center">
+                <h5 class="card-title">Verificador de enlaces Antipishing</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="linea-horizontal" />
+      <div id="divPrincipal">
+        <h1 class="elti">Estrategias para Proteger tus Datos</h1>
+        <br />
+        <p>
+          La seguridad en línea es una preocupación cada vez mayor. En esta
+          sección discutiremos las mejores prácticas y herramientas para
+          mantener tus datos seguros en un mundo cada vez más conectado.
+        </p>
+        <br />
+        <div id="tablaDiv">
+          <table>
+            <tr>
+              <h1><th>Pasos Prácticos de Protección de Datos</th></h1>
+              <h1><th>Las Mejores Herramientas de Seguridad</th></h1>
+              <h1><th>Consejos de Seguridad para Empresas</th></h1>
+            </tr>
+            <tr>
+              <td>
+                <p>1. Usa contraseñas seguras y cámbialas con frecuencia.</p>
+                <br />
+                <p>
+                  2. No compartas tu información personal en redes sociales.
+                </p>
+                <br />
+                <p>3. Usa software de seguridad de confianza en tu equipo.</p>
+                <br />
+              </td>
+              <td>
+                <p>1. Servicios de VPN de calidad</p>
+                <br />
+                <p>2. Programas Anti-Virus</p>
+                <br />
+                <p>3. Contraseñas Manager</p>
+                <br />
+              </td>
+              <td>
+                <p>1. Realiza copias de seguridad con regularidad.</p>
+                <br />
+                <p>2. Limita el acceso a la información confidencial.</p>
+                <br />
+                <p>3. Entrena a tus empleados en ciberseguridad.</p>
+                <br />
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <hr class="linea-horizontal" />
+      <div class="intro">
+        <h1 class="sobre d-flex justify-content-center">Sobre la página</h1>
+        <br />
+
+        <p class="parra">
+          ¡Bienvenido/aa nuestra página web de generación de seguras y análisis
+          de seguridad en línea! En un mundo cada vez más conectado, la
+          protección de nuestros datos personales se ha vuelto fundamental.
+          Nuestra plataforma está diseñada para ayudarte a salvar tu información
+          confidencial y mantente a salvo en el ciberespacio.<br /><br />
+
+          En primer lugar, ofrecemos una herramienta sencilla y eficiente para
+          generar contraseñas seguras. Sabemos lo que puede ser crear
+          contraseñas robustas que cumplir con todas las medidas de seguridad
+          recomendadas. Nuestro generador de contraseñas te permite crear
+          combinaciones únicas y difíciles de adivinar, con una longitud
+          adecuada y una mezcla de letras mayúsculas y minúsculas, números y
+          caracteres especiales.<br /><br />
+
+          Además de generar contraseñas, estamos comprometidos en ayudarte a
+          mantener un entorno en línea seguro. Próximamente, implementaremos una
+          función para analizar enlaces y verificar si contienen virus o
+          malware. Esto te permitirá navegar con confianza, evitando posibles
+          amenazas que puedan dañar tu dispositivo o comprometer tus datos.<br /><br />
+
+          También ofreceremos una herramienta para detectar páginas web falsas o
+          phishing. Muchas veces, los estafadores sitios web que imitan a las
+          páginas legítimas para engañar a los usuarios y robar su información
+          personal. Nuestra función de análisis de phishing te alertará si una
+          página parece sospechosa, protegiéndote de posibles engaños.<br /><br />
+
+          En resumen, nuestra página web se centra en dos aspectos clave: la
+          generación de contraseñas seguras y el análisis de seguridad en línea.
+          Nuestro objetivo es proporcionarte las herramientas necesarias para
+          proteger tus datos y mantenerte a salvo en el mundo digital. Explora
+          nuestra plataforma y únete a nuestra comunidad comprometida con la
+          seguridad en línea. ¡Tu protección es nuestra prioridad!
+        </p>
+      </div>
+      <hr class="linea-horizontal" />
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

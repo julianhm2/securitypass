@@ -1,0 +1,16 @@
+.titulo {
+  position: absolute;
+  right: 40%;
+  top: 17vh;
+  color: white;
+}
+
+.parrafo {
+  position: absolute;
+  width: 50%;
+  text-align: center;
+  left: 25%;
+  top: 20vh;
+  color: white;
+  padding: 60px;
+}

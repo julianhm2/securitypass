@@ -1,0 +1,181 @@
+<!--Aqui inicia el inicio de la pagina-->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Menù Lateral con Css</title>
+    <link rel="stylesheet" href="estilos.css" />
+    <script src="hola.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="btn-menu">
+          <label for="btn-menu">☰</label>
+        </div>
+        <div class="logo">
+          <h1>ASOCABA</h1>
+        </div>
+        <nav class="menu">
+          <a href="reportnacimiento1.html">Volver</a>
+          <a href="index.html">Inicio</a>
+          <a href="nosotros.html">Nosotros</a>
+          <a href="#">Contacto</a>
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/6073/6073873.png"
+            class="perfil"
+            onclick="toggleOptions()"
+          />
+          <div id="opciones" class="opciones">
+            <div class="perfil2">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/6073/6073873.png"
+                class="imagen2"
+              />
+              <h4>
+                <strong><u>Andres Parra</u></strong>
+              </h4>
+            </div>
+            <a href="#" id="letraper">Ver perfil </a>
+            <a href="#" id="letraper">Configuraciones</a>
+            <a href="#" id="letraper">Cerrar sesión</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <div class="capa"></div>
+
+    <input type="checkbox" id="btn-menu" />
+    <div class="container-menu">
+      <div class="cont-menu">
+        <nav>
+          <a href="#">Volver</a>
+          <a href="#">Reporte de monta</a>
+          <a href="#">Reporte de nacimiento</a>
+          <a
+            href="#"
+            class="redes"
+            style="text-decoration: underline; color: white"
+            ><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+            Redes sociales</a
+          >
+          <a href="https://www.facebook.com/Asocaba">Facebook</a>
+          <a href="https://www.youtube.com/@asocaba4376">Youtube</a>
+          <a href="https://www.Instagram.com/@asocaba4376">Instagram</a>
+        </nav>
+        <label for="btn-menu">✖️</label>
+      </div>
+    </div>
+  </body>
+  <!--Aqui finaliza el inicio de la pagina-->
+
+  <!--Aqui inicia el formulario el inicio de la pagina-->
+
+  <body class="elbody">
+    <div class="Titulo"><h1>FORMULARIO DE REGISTRO DE EQUINOS</h1></div>
+    <form action="#" method="POST">
+      <h2>Datos del reproductor:</h2>
+      <label for="nombre_reproductor">Nombre:</label>
+      <input
+        type="text"
+        id="nombre_reproductor"
+        name="nombre_reproductor"
+        required
+      /><br />
+      <label for="tipo_reproductor">Tipo de equino:</label>
+      <input
+        type="text"
+        id="tipo_reproductor"
+        name="tipo_reproductor"
+        required
+      /><br />
+
+      <label for="microchip_reproductor">Microchip N:</label>
+      <input
+        type="text"
+        id="microchip_reproductor"
+        name="microchip_reproductor"
+        required
+      /><br />
+
+      <label for="propietario_reproductor">Propietario:</label>
+      <input
+        type="text"
+        id="propietario_reproductor"
+        name="propietario_reproductor"
+        required
+      /><br />
+
+      <label for="criadero_reproductor">Criadero:</label>
+      <input
+        type="text"
+        id="criadero_reproductor"
+        name="criadero_reproductor"
+        required
+      /><br />
+
+      <label for="telefono_reproductor">Teléfono:</label>
+      <input
+        type="tel"
+        id="telefono_reproductor"
+        name="telefono_reproductor"
+        required
+      /><br />
+
+      <label for="email_reproductor">Email:</label>
+      <input
+        type="email"
+        id="email_reproductor"
+        name="email_reproductor"
+        required
+      /><br />
+
+      <h2>Datos de la yegua madre:</h2>
+      <label for="nombre_yegua">Nombre:</label>
+      <input type="text" id="nombre_yegua" name="nombre_yegua" required /><br />
+
+      <label for="tipo_yegua">Tipo de equino:</label>
+      <input type="text" id="tipo_yegua" name="tipo_yegua" required /><br />
+
+      <label for="microchip_yegua">Microchip N:</label>
+      <input
+        type="text"
+        id="microchip_yegua"
+        name="microchip_yegua"
+        required
+      /><br />
+
+      <label for="propietario_yegua">Propietario:</label>
+      <input
+        type="text"
+        id="propietario_yegua"
+        name="propietario_yegua"
+        required
+      /><br />
+      <label for="criadero_reproductor">Criadero:</label>
+      <input
+        type="text"
+        id="criadero_yegua"
+        name="criadero_yegua"
+        required
+      /><br />
+
+      <label for="telefono_reproductor">Teléfono:</label>
+      <input
+        type="tel"
+        id="telefono_yegua"
+        name="telefono_yegua"
+        required
+      /><br />
+
+      <label for="email_reproductor">Email:</label>
+      <input type="email" id="email_yegua" name="email_yegua" required /><br />
+
+      <h3>TIPO Y FECHA DE SERVICIO</h3>
+
+      <button class="enviar">Enviar</button>
+    </form>
+  </body>
+
+  <!--Aqui formulario el formulario el inicio de la pagina parte1-->
+</html>
